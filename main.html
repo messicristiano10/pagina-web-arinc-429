@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instrumentos de Navegación ARINC 429</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Instrumentos de Navegación</h1>
+
+        <label for="instrumento">Seleccionar instrumento:</label>
+        <select id="instrumento">
+            <option value="altimetro">Altímetro</option>
+            <option value="velocimetro">Velocímetro</option>
+            <option value="horizonte">Horizonte Artificial</option>
+            <option value="brujula">Brújula</option>
+        </select>
+
+        <div id="instrumento-img">
+            <img src="images/altimetro.png" alt="Altímetro" id="imgDisplay">
+        </div>
+
+        <label for="valor">Valor a enviar:</label>
+        <input type="number" id="valor" placeholder="Ingrese valor">
+
+        <button id="enviar">Enviar al Servidor</button>
+
+        <div id="mensaje"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
